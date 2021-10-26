@@ -666,27 +666,27 @@ crossorigin="anonymous"
         .submit(function (evt) {
           evt.preventDefault();
         })
-        .validate({
-          // Make sure the form is submitted to the destination defined
-          // in the "action" attribute of the form when valid
-          submitHandler: function (form) {
-            // console.log('Success:', $(form).serialize());
-            const formData = $(form).serialize();
-            $.post("api.php", formData, function (res) {
-              console.log("Res:", res);
-              /*const response = JSON.parse(res);
-              if (response.status == 'success') {
-                location.href = 'login.html'
-              } else {
-                Swal.fire({
-                  text: '',
-                  title: 'Error',
-                  icon: 'info'
-                })
-              }*/
-            });
-          },
-        });
+//         .validate({
+//           // Make sure the form is submitted to the destination defined
+//           // in the "action" attribute of the form when valid
+//           submitHandler: function (form) {
+//             // console.log('Success:', $(form).serialize());
+//             const formData = $(form).serialize();
+//             $.post("api.php", formData, function (res) {
+//               console.log("Res:", res);
+//               /*const response = JSON.parse(res);
+//               if (response.status == 'success') {
+//                 location.href = 'login.html'
+//               } else {
+//                 Swal.fire({
+//                   text: '',
+//                   title: 'Error',
+//                   icon: 'info'
+//                 })
+//               }*/
+//             });
+//           },
+//         });
     
 </script>
 </body>
