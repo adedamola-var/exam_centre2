@@ -1,0 +1,707 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&display=swap"
+  rel="stylesheet"
+  />
+  <link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+  crossorigin="anonymous"
+  />
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
+    <script src="custom.js"></script>
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+
+<body>
+
+  <div class=".d-none">
+    <div id="mySidenav" class="sidenav">
+      <p class="logo"><img src="images/image 3.svg">
+        <nav class="navbar nav_margin">
+
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">   <img src="images/dashboard 3.png" class="mr-2">Dashboard</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="exam_form1.html"><img src="images/exams 3.png" class="mr-2">Exam Form</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"  href="photograph.html"><img src="images/photograph 3.png" class="mr-2">Photograph</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="applications.html"><img src="images/applications.png"class="mr-2">Application</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="practice.html" ><img src="images/practice Question 6.png"class="mr-2">Practice</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="interview_schedule1.html"><img src="images/interview Schedule 5.png"class="mr-2">Interview Dates</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"  href="payment.html" ><img src="images/payment 3.png"class="mr-2">Payment</a>
+    </li>
+  </ul>
+
+</nav>
+        <div class="contact_form">
+          <p class="contact_us">
+            Are you having<br />
+            any issues with<br />
+            the platform?
+          </p>
+          <button class="contact">Contact Us</button>
+        </div>
+      </div>
+
+
+    </p>
+  </div>
+</div>
+
+<div id="main">
+
+
+  <form id="myForm" action="#" method="POST">
+    <div class="tab">
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:25%">
+          <span class="sr-only">70% Complete</span>
+        </div>
+      </div>
+      <p class="step1">STEP 1</p>
+      <p class="student_application">Student/Application <br>Information</p>
+  <div class="box_text">
+    <div class="row">
+      <div class="col-lg-12 col-md-12">
+        <div class="form-group">
+          <label>Surname/Last Name*</label>
+          <input type="text" id="student_lname" name="student_lname" class="TextBox">
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="form-group">
+          <label>First Name*</label>
+          <input type="text" id="student_fname" name="student_fname" class="TextBox">
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="form-group">
+          <label>Other Names</label>
+          <input type="text" id="student_oname" name="student_oname" class="TextBox">
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="form-group">
+          <label>Disability</label>
+          <input type="text" id="disability" name="disability" class="TextBox">
+        </div>
+      </div>
+
+      <div class="col-6 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+        <div class="form-group">
+        <label>Sex*</label>
+        <select type="text"placeholder="Sex" id="student_sex" name="student_sex" class="TextBox1">
+          <option value="" disabled selected hidden>Choose your gender</option>
+          <option value="mercedes">Male</option>
+          <option value="audi">Female</option>
+        </select>
+        </div>
+      </div>
+      <div class="col-6 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+        <div class="form-group">
+        <label>Date of Birth*</label>
+          <input type="date" placeholder="Date of Birth" name="student_dob"  class="TextBox1" id="student_dob">
+      </select>
+      </div>
+    </div>
+
+    <div class="col-6 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+      <div class="form-group">
+      <label>Nationality*</label>
+      <select type="text" placeholder="Nationality" id="nationality" name="TextBox" class="TextBox1">
+        <option value="" disabled selected hidden>Choose your Nationality</option>  
+      </select>
+      </div>
+    </div>
+    <div class="col-6 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+      <div class="form-group">
+      <label>State of Origin*</label>
+      <select type="text"placeholder="State of Origin" id="states" name="TextBox" class="TextBox1">
+       <option value="" disabled selected hidden>State of Origin</option>
+     </select>
+     </div>
+   </div>
+
+   <div class="col-6 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+     <div class="form-group">
+    <label>Religion</label>
+    <select type="text"placeholder="Religion" id="student_religion" name="student_religion" class="TextBox1">
+      <option value="" disabled selected hidden>Choose a Religion</option>
+      <option value="christainity">Christainity</option>
+      <option value="islam">Islam</option>
+      <option value="Non-religious">Non-religious</option>
+      <option value="hinduism">Hinduism</option>
+      <option value="others">Others</option>
+    </select>
+    </div>
+  </div>
+  <div class="col-6 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+    <div class="form-group">
+      <label>Local Government*</label>
+    <input type="text" id="student_local" name="student_local" class="TextBox1" >
+    </div>
+</div>
+  <div class="col-6 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+    <div class="form-group">
+    <label>Home Town</label>
+    <input type="text" id="student_htown" name="student_htown" class="TextBox1">
+  </div>
+  </div>
+  <div class="col-6 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+    <div class="form-group">
+    <label>Place of Birth</label>
+    <input type="text" id="student_pob" name="student_pob" class="TextBox1">
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+  
+
+<div class="tab">
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+      <span class="sr-only">70% Complete</span>
+    </div>
+  </div>
+
+
+
+  <p class="step1">STEP 2</p>
+  <p class="student_application">Present School <br>Details</p>
+<div class="box_text">
+  <div class="row">
+    <div class="col-lg-12 col-md-12">
+      <div class="form-group">
+        <label>Name of present school*</label>
+        <input type="text" id="present_school" name="present_school" class="TextBox" >
+      </div>
+      </div>
+    <div class="col-lg-12">
+      <div class="form-group">
+        <label>Address*</label>
+        <input type="text" id="student_address" name="student_address" class="TextBox">
+      </div>
+    </div>
+    <div class="col-lg-12">
+      <div class="form-group">
+        <label>Email*</label>
+        <input type="text" id="student_email" name="student_email" class="TextBox" >
+      </div>
+    </div>
+  
+      <div class="col-lg-6">
+        <div class="form-group">
+        <label>Phone No*</label>
+        <input type="text" id="student_phone" name="student_phone" class="TextBox1">
+      </div>
+      </div>
+    <div class="col-lg-6">
+      <div class="form-group">
+      <label>Most Recent Class*</label>
+        <input type="text" id="recent_class" name="recent_class" class="TextBox1">
+      </div>
+      </div>
+      </div>
+    </div>
+    </div>
+  
+ 
+
+
+<div class="tab">
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+      <span class="sr-only">70% Complete</span>
+    </div>
+  </div>
+
+
+
+  <p class="step1">STEP 3</p>
+  <p class="student_application">First Parent/Guardian</p>
+  <div class="box_text">
+    <div class="row">
+      <div class="col-lg-12 col-md-12">
+        <div class="form-group">
+          <label>Title*</label>
+          <select type="text"placeholder="Title" id="title1" name="title1" class="TextBox" >
+            <option value="" disabled selected hidden>Choose your Title</option>
+             <option value="mr">Mr</option>
+             <option value="mrs">Mrs</option>
+             <option value="miss">Miss</option>
+             <option value="miss">Prof</option>
+             <option value="miss">Chief</option>
+             <option value="rev">Reve</option>
+             <option value="dr">Dr</option>
+             <option value="engr">Engr</option>
+             <option value="pham">Pham</option>
+             <option value="miss">Others</option>
+           </select>
+        </div>
+        </div>
+      <div class="col-lg-12">
+        <div class="form-group">
+          <label>Surname/Last Name*</label>
+          <input type="text" id="surname1" name="surname1" class="TextBox">
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="form-group">
+          <label>First Name*</label>
+          <input type="text" id="fname1" name="fname1" class="TextBox" >
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="form-group">
+          <label>Email*</label>
+          <input type="text" id="email1" name="email1" class="TextBox" >
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="form-group">
+        <label>Mobile Phone Number*</label>
+       <input type="text" id="mobile_phone1" name="mobile_phone1" class="TextBox">
+ </div>
+     </div>
+
+     <div class="col-lg-12">
+      <div class="form-group">
+      <label>Home/Mailing Address</label>
+        <input type="text" id="home_mail1" name="home_mail1" class="TextBox">
+      </div>
+      </div>
+
+      <div class="col-lg-12">
+        <div class="form-group">
+        <label>Business/Office Address</label>
+          <input type="text" id="bussiness_address1" name="bussiness_address1" class="TextBox">
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="form-group">
+          <label>Occupation</label>
+          <input type="text" id="occupation1" name="occupation1" class="TextBox1">
+        </div>
+        </div> 
+        <div class="col-lg-6">
+          <div class="form-group">
+          <label>Employer</label>
+          <input type="text" id="employer1" name="employer1" class="TextBox1">
+        </div>
+        </div>
+    
+      
+      <div class="col-lg-6">
+        <div class="form-group">
+        <label>Date of Birth</label>
+        <input type="date" placeholder="Date of Birth" name="birth1"  class="TextBox1" id="birth1" >
+    </div>
+        </div>  
+         <div class="col-lg-6">
+           <div class="form-group">
+          <label>Home Phone Number</label>
+          <input type="text" id="home_phone1" name="home_phone1" class="TextBox1">
+        </div>
+        </div>
+
+      </div>
+      </div>
+    
+    </div>
+    
+    
+    <div class="tab">
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+          <span class="sr-only">70% Complete</span>
+        </div>
+      </div>
+    
+    
+    
+      <p class="step1">STEP 4</p>
+      <p class="student_application">First Parent/Guardian</p>
+    <div class="box_text">
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <div class="form-group">
+            <label>Title*</label>
+            <select type="text"placeholder="Title" id="title2" name="title2" class="TextBox">
+              <option value="" disabled selected hidden>Choose your Title</option>
+               <option value="mr">Mr</option>
+               <option value="mrs">Mrs</option>
+               <option value="miss">Miss</option>
+               <option value="prof">Prof</option>
+               <option value="chief">Chief</option>
+               <option value="rev">Reve</option>
+               <option value="dr">Dr</option>
+               <option value="engr">Engr</option>
+               <option value="pham">Pham</option>
+               <option value="miss">Others</option>
+             </select>
+          </div>
+          </div>
+        <div class="col-lg-12">
+          <div class="form-group">
+            <label>Surname/Last Name*</label>
+            <input type="text" id="surname2" name="surname2" class="TextBox">
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="form-group">
+            <label>First Name*</label>
+            <input type="text" id="fname2" name="fname2" class="TextBox">
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="form-group">
+            <label>Email*</label>
+            <input type="text" id="email2" name="email2" class="TextBox">
+          </div>
+        </div>
+
+        <div class="col-lg-12">
+          <div class="form-group">
+          <label>Mobile Phone Number*</label>
+         <input type="text" id="mobile_phone2" name="mobile_phone2" class="TextBox">
+   </div>
+       </div>
+
+       <div class="col-lg-12">
+        <div class="form-group">
+        <label>Home/Mailing Address</label>
+          <input type="text" id="home_mail2" name="home_mail2" class="TextBox">
+        </div>
+        </div>
+
+        <div class="col-lg-12">
+          <div class="form-group">
+          <label>Business/Office Address</label>
+            <input type="text" id="bussiness_address2" name="bussiness_address2" class="TextBox">
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="form-group">
+            <label>Occupation</label>
+            <input type="text" id="occupation2" name="occupation2" class="TextBox1">
+          </div>
+          </div> 
+          
+          <div class="col-lg-6">
+            <div class="form-group">
+            <label>Employer</label>
+            <input type="text" id="employer2" name="employer2" class="TextBox1">
+          </div>
+          </div>
+      
+        
+        <div class="col-lg-6">
+          <div class="form-group">
+          <label>Date of Birth</label>
+          <input type="date" placeholder="Date of Birth" name="birth2"  class="TextBox1" id="birth2"> 
+      </div>
+          </div>
+        
+           <div class="col-lg-6">
+             <div class="form-group">
+            <label>Home Phone Number</label>
+            <input type="text" id="home_phone2" name="home_phone2" class="TextBox1">
+          </div>
+          </div>
+        
+        </div>
+        </div>
+      </div>  
+      <div class="col-lg-12 btn-wrap">
+        <button type="button" class="previous skip">Previous</button>
+                <button type="button" class="next">Next</button>
+                <button type="button" class="submit">Submit</button> 
+      </div>
+      <input type="hidden" name="action" value="exam_form" />
+</form>
+
+
+</div>
+
+
+
+
+
+
+
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+crossorigin="anonymous"
+></script>
+<script
+src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+crossorigin="anonymous"
+></script>
+
+
+
+<script>
+ $(document).ready(function(){
+  $.get('get_country_list.php',function(r){
+    res = JSON.parse(r);
+    console.log(res);
+    countryList = [];
+    const countryListData = res.data;
+    for (const country of Object.entries(countryListData)) {
+      $('#nationality').append(
+        $('<option />')
+        .text(country[1]['country'])
+        .val(country[1]['country'])
+        );
+    }
+  });
+
+  $('#nationality').change(function(evt) {
+    const selectedCountry = $(this).val();
+
+    $.get('get_state_list.php', {country: selectedCountry}, function(r){
+      console.log(r);
+      res = JSON.parse(r);
+      stateList = [];
+      const stateListData = res.data.states;
+      $('#states').empty();
+      for (const state of Object.entries(stateListData)) {
+        console.log(state);
+        $('#states').append(
+          $('<option />')
+          .text(state[1]['name'])
+          .val(state[1]['name'])
+          );
+      }
+    });
+  });
+})
+</script>
+
+
+
+
+<script type="text/javascript">
+
+        
+  $(document).ready(function(){
+
+          
+        $.validator.addMethod('student_lname', function(value, element, param) {
+          var nameRegex = /^[a-zA-Z0-9]+$/;
+          return value.match(nameRegex);
+      }, 'Only a-z, A-Z, 0-9 characters are allowed');
+      $.validator.addMethod('student_fname', function(value, element, param) {
+          var nameRegex = /^[a-zA-Z0-9]+$/;
+          return value.match(nameRegex);
+      }, 'Only a-z, A-Z, 0-9 characters are allowed');
+      $.validator.addMethod('present_school', function(value, element, param) {
+          var nameRegex = /^[a-zA-Z0-9]+$/;
+          return value.match(nameRegex);
+      }, 'Only a-z, A-Z, 0-9 characters are allowed');
+      $.validator.addMethod('surname1', function(value, element, param) {
+          var nameRegex = /^[a-zA-Z0-9]+$/;
+          return value.match(nameRegex);
+      }, 'Only a-z, A-Z, 0-9 characters are allowed');
+      $.validator.addMethod('fname1', function(value, element, param) {
+          var nameRegex = /^[a-zA-Z0-9]+$/;
+          return value.match(nameRegex);
+      }, 'Only a-z, A-Z, 0-9 characters are allowed');
+      $.validator.addMethod('fname2', function(value, element, param) {
+          var nameRegex = /^[a-zA-Z0-9]+$/;
+          return value.match(nameRegex);
+      }, 'Only a-z, A-Z, 0-9 characters are allowed');
+      $.validator.addMethod('surname2', function(value, element, param) {
+          var nameRegex = /^[a-zA-Z0-9]+$/;
+          return value.match(nameRegex);
+      }, 'Only a-z, A-Z, 0-9 characters are allowed');
+      $.validator.addMethod('home_phone1', function(value, element, param) {
+          var nameRegex = /^\+[0-9]{5,18}$/;
+          return value.match(nameRegex);
+      }, 'Only a-z, A-Z, 0-9 characters are allowed');
+      $.validator.addMethod('home_phone2', function(value, element, param) {
+          var nameRegex = /^\+[0-9]{5,18}$/;
+          return value.match(nameRegex);
+      }, 'Only a-z, A-Z, 0-9 characters are allowed');
+
+      var val = {
+          // Specify validation rules
+          rules: {
+              student_fname: "required",
+              student_lname: "required",
+              student_sex:"required",
+              student_dob:"required",
+              nationality:"required",
+              states:"required",
+              student_local:"required",
+              present_school:"required",
+              student_address: "required",
+              recent_class:"required",
+              student_email: {
+                  required: true,
+                  email: true
+              },
+              student_phone: {
+                  required:true,
+                  minlength:5,
+                  maxlength:18,
+                  digits:true
+              },
+              title1:"required",
+              title2:"required",
+              surname1:"required",
+              surname2:"required",
+              fname1:"required",
+              fname2:"required",
+              email1:{
+                  required: true,
+                  email: true
+              },
+              email2:{
+                  required: true,
+                  email: true
+              },
+              mobile_phone1:{
+                  required:true,
+                  minlength:5,
+                  maxlength:18,
+                  digits:true
+              },
+              mobile_phone2:{
+                  required:true,
+                  minlength:5,
+                  maxlength:18,
+                  digits:true
+              },
+
+          },
+          // Specify validation error messages
+          messages: {
+              student_fname:      "First name is required",
+              student_lname:      "Last name is required",
+              student_sex:        "Sex is required",
+              student_dob:      "Date of birth is required",
+              nationality:      "Nationality is required",
+              states:      "State is required",
+              student_local:      "A local Government is required",
+              present_school: "A school is required",
+              student_address: "Address is required",
+              recent_class: "Present class is required",
+              student_email: "An email address is required",
+              student_phone: "Phone number is required",
+              title1:"Title is required",
+              title2:"Title is required",
+              surname1:"A surname is required",
+              surname2:"A surname is required",
+              fname1:"First name is required",
+              fname2:"First name is required",
+              email1:"An email is required",
+              email2:"A n email is required required",
+              mobile_phone1: "Phone number is required",
+              mobile_phone2:"Phone number is required",
+
+              recent_class: "Recent class is required",
+          
+            }
+        }
+
+        
+
+        $("#myForm").multiStepForm(
+        {
+            // defaultStep:0,
+            beforeSubmit : function(form, submit){
+                console.log("called before submiting the form");
+                console.log(form);
+                console.log(submit);
+            },
+            validations:val,
+        }
+        ).navigateTo(0);
+    });
+
+
+    $("#myForm")
+        .submit(function (evt) {
+          evt.preventDefault();
+        })
+        .validate({
+          // Make sure the form is submitted to the destination defined
+          // in the "action" attribute of the form when valid
+          submitHandler: function (form) {
+            // console.log('Success:', $(form).serialize());
+            const formData = $(form).serialize();
+            $.post("api.php", formData, function (res) {
+              console.log("Res:", res);
+              /*const response = JSON.parse(res);
+              if (response.status == 'success') {
+                location.href = 'login.html'
+              } else {
+                Swal.fire({
+                  text: '',
+                  title: 'Error',
+                  icon: 'info'
+                })
+              }*/
+            });
+          },
+        });
+    
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

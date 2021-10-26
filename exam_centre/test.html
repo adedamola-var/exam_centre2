@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery Multi Step Form Wizard Plugin With Demo</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
+    <script src="custom.js"></script>
+  </head>
+  <body>
+    <div class=".d-none">
+      <div id="mySidenav" class="sidenav">
+        <p class="logo"><img src="images/image 3.svg">
+          <nav class="navbar nav_margin">
+  
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">   <img src="images/dashboard 3.png" class="mr-2">Dashboard</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="exam_form1.html"><img src="images/exams 3.png" class="mr-2">Exam Form</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"  href="photograph.html"><img src="images/photograph 3.png" class="mr-2">Photograph</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="applications.html"><img src="images/applications.png"class="mr-2">Application</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="practice.html" ><img src="images/practice Question 6.png"class="mr-2">Practice</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="interview_schedule1.html"><img src="images/interview Schedule 5.png"class="mr-2">Interview Dates</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"  href="payment.html" ><img src="images/payment 3.png"class="mr-2">Payment</a>
+      </li>
+    </ul>
+  
+  </nav>
+          <div class="contact_form">
+            <p class="contact_us">
+              Are you having<br />
+              any issues with<br />
+              the platform?
+            </p>
+            <button class="contact">Contact Us</button>
+          </div>
+        </div>
+  
+  
+      </p>
+    </div>
+  </div>
+  
+    <form id="myForm" action="#" method="POST">
+      <div class="box_text tab">
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <div class="form-group">
+              <label>Surname/Last Name*</label>
+              <input type="text" id="student_lname" name="student_lname" class="TextBox">
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="form-group">
+              <label>First Name*</label>
+              <input type="text" id="student_fname" name="student_fname" class="TextBox">
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="form-group">
+              <label>Other Names</label>
+              <input type="text" id="student_oname" name="student_oname" class="TextBox">
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="form-group">
+              <label>Disability</label>
+              <input type="text" id="disability" name="disability" class="TextBox" >
+            </div>
+          </div>
+          <div class="col-6 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+            <div class="form-group">
+            <label>Sex*</label>
+            <select type="text"placeholder="Sex" id="student_sex" name="student_sex" class="TextBox1" >
+              <option value="" disabled selected hidden>Choose your gender</option>
+              <option value="mercedes">Male</option>
+              <option value="audi">Female</option>
+            </select>
+            </div>
+          </div>
+          <div class="col-6 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+            <div class="form-group">
+            <form action="/action_page.php">
+              <label>Date of Birth*</label>
+              <input type="date" placeholder="Date of Birth" name="student_dob"  class="TextBox1" id="student_dob" >  
+            </form>
+          </select>
+          </div>
+        </div>
+        <div class="col-6 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+          <div class="form-group">
+          <label>Nationality*</label>
+          <select type="text" placeholder="Nationality" id="nationality" name="TextBox" class="TextBox1" >
+            <option value="" disabled selected hidden>Choose your Nationality</option>  
+          </select>
+          </div>
+        </div>
+        <div class="col-6 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+          <div class="form-group">
+          <label>State of Origin*</label>
+          <select type="text"placeholder="State of Origin" id="states" name="TextBox" class="TextBox1" >
+           <option value="" disabled selected hidden>State of Origin</option>
+         </select>
+         </div>
+       </div>
+       <div class="col-6 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+        <div class="form-group">
+       <label>Religion</label>
+       <select type="text"placeholder="Religion" id="student_religion" name="student_religion" class="TextBox1">
+         <option value="" disabled selected hidden>Choose a Religion</option>
+         <option value="mercedes">Christainity</option>
+         <option value="audi">Islam</option>
+         <option value="audi">Nonreligious</option>
+         <option value="audi">Hinduism</option>
+         <option value="audi">Others</option>
+       </select>
+       </div>
+     </div>
+     <div class="col-6 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+       <div class="form-group">
+         <label>Local Government*</label>
+       <input type="text" id="student_local" name="student_local" class="TextBox1" >
+       </div>
+   </div>
+   
+     <div class="col-6 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+       <div class="form-group">
+       <label>Home Town</label>
+       <input type="text" id="student_htown" name="student_htown" class="TextBox1">
+     </div>
+     </div>
+     <div class="col-6 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+       <div class="form-group">
+       <label>Place of Birth</label>
+       <input type="text" id="student_pob" name="student_pob" class="TextBox1">
+     </div>
+   </div>
+  </div>
+  
+
+
+   <div class="box_text tab">
+    <div class="row">
+      <div class="col-lg-12 col-md-12">
+        <div class="form-group">
+          <label>Name of present school*</label>
+          <input type="text" id="present_school" name="present_school" class="TextBox" >
+        </div>
+        </div>
+      <div class="col-lg-12">
+        <div class="form-group">
+          <label>Address*</label>
+          <input type="text" id="student_address" name="student_address" class="TextBox">
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="form-group">
+          <label>Email*</label>
+          <input type="text" id="student_email" name="student_email" class="TextBox" >
+        </div>
+      </div>
+    
+        <div class="col-lg-6">
+          <div class="form-group">
+          <label>Phone No*</label>
+          <input type="text" id="student_phone" name="student_phone" class="TextBox1">
+        </div>
+        </div>
+      <div class="col-lg-6">
+        <div class="form-group">
+        <label>Most Recent Class*</label>
+          <input type="text" id="recent_class" name="recent_class" class="TextBox1">
+        </div>
+        </div>
+        
+     </div>
+   </div>
+   
+     
+   
+   
+   
+    
+      <div class="tab">
+        Contact Info:
+        <p><input placeholder="E-mail..." name="email" /></p>
+        <p><input placeholder="Phone..." name="phone" /></p>
+      </div>
+      <div class="tab">
+        Birthday:
+        <p><input placeholder="dd" name="date" /></p>
+        <p><input placeholder="mm" name="month" /></p>
+        <p><input placeholder="yyyy" name="year" /></p>
+      </div>
+      <div class="tab">
+        Login Info:
+        <p><input placeholder="Username..." name="username" /></p>
+        <p>
+          <input placeholder="Password..." name="password" type="password" />
+        </p>
+      </div>
+      <div style="overflow: auto">
+        <div style="float: right; margin-top: 5px">
+          <button type="button" class="previous">Previous</button>
+          <button type="button" class="next">Next</button>
+          <button type="button" class="submit">Submit</button>
+        </div>
+      </div>
+      <!-- Circles which indicates the steps of the form: -->
+      <div style="text-align: center; margin-top: 40px">
+        <span class="step">1</span>
+        <span class="step">2</span>
+        <span class="step">3</span>
+        <span class="step">4</span>
+      </div>
+    </form>
+  </body>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $.validator.addMethod(
+        "date",
+        function (value, element, param) {
+          return value != 0 && value <= 31 && value == parseInt(value, 10);
+        },
+        "Please enter a valid date!"
+      );
+      $.validator.addMethod(
+        "month",
+        function (value, element, param) {
+          return value != 0 && value <= 12 && value == parseInt(value, 10);
+        },
+        "Please enter a valid month!"
+      );
+      $.validator.addMethod(
+        "year",
+        function (value, element, param) {
+          return value != 0 && value >= 1900 && value == parseInt(value, 10);
+        },
+        "Please enter a valid year not less than 1900!"
+      );
+      $.validator.addMethod(
+        "username",
+        function (value, element, param) {
+          var nameRegex = /^[a-zA-Z0-9]+$/;
+          return value.match(nameRegex);
+        },
+        "Only a-z, A-Z, 0-9 characters are allowed"
+      );
+
+      var val = {
+        // Specify validation rules
+        rules: {
+          student_fname: "required",
+          student_lname: "required",
+          student_sex: "required",
+          student_dob: "required",
+          nationality: "required",
+          states: "required",
+          student_local: "required",
+          
+
+
+          
+        },
+        // Specify validation error messages
+        messages: {
+          student_fname: "First name is required",
+          student_lname: "First name is required",
+          student_sex: "sex is required",
+          student_dob: "date of birth is required is required",
+          nationality: "nationality is required",
+          states: "state is required",
+          student_local:"local government is required",
+         
+
+  
+        },
+      };
+      $("#myForm")
+        .multiStepForm({
+          // defaultStep:0,
+          beforeSubmit: function (form, submit) {
+            console.log("called before submiting the form");
+            console.log(form);
+            console.log(submit);
+          },
+          validations: val,
+        })
+        .navigateTo(0);
+    });
+  </script>
+</html>
